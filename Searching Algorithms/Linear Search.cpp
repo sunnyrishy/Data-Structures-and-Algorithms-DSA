@@ -1,5 +1,8 @@
 It is just a normal loop iteration search .
 
+It is also known as Sequential Search.
+
+    
 #include<iostream>
 using namespace std;
 
