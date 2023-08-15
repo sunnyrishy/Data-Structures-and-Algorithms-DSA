@@ -1,5 +1,5 @@
 To use Binary Search , the array must be sorted.
-  Binary Search can't be applied to unsorted array.
+Binary Search can't be applied to unsorted array.
 
   Binary Seach Code :  
 
