@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    unordered_map<int, int> hashtable;
+    
+    hashtable[1] = 10;
+    hashtable[2] = 20;
+    hashtable[3] = 30;
+    
+    map<int, int> sortedmap(hashtable.begin(), hashtable.end());  //sorting in order other wise the key-value pair will be printed in reverse order
+    
+    for(const auto& pair : sortedmap){
+        cout<<"Key : "<<pair.first<<", Value : "<<pair.second<<endl;
+    }
+}
