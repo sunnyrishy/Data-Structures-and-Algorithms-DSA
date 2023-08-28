@@ -1,0 +1,11 @@
+A Trie (pronounced "try") is a tree-like data structure used for efficiently storing a dynamic set of strings or keys. 
+It is particularly useful for tasks involving fast string searching, such as autocomplete suggestions, spell checking, and IP routing. 
+The name "Trie" comes from the word "retrieval," as the structure excels at retrieval tasks.
+
+In a Trie, each node of the tree represents a single character of a string. 
+The path from the root to a node forms a string that is associated with that node. 
+Each node typically contains links or pointers to its child nodes, which represent the next character in the string. 
+The tree is organized in such a way that all strings that share a common prefix share a common path in the Trie.
+
+
+Reference : https://www.digitalocean.com/community/tutorials/trie-data-structure-in-c-plus-plus
