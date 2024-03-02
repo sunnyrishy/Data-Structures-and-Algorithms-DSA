@@ -44,3 +44,36 @@ Enter Edges :
 0 1 0 0 1 1 
 0 0 1 1 0 1 
 0 0 0 1 1 0 
+
+
+
+Graph Initialization for Weighted Graph
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main () {
+    int n = 5;
+    int m = 6;  // this can be taken from the user input
+    
+    int adj[n+1][n+1];   // n+1 is because of the usage of 1 based Indexing.   We can use adj[n][n] if we are using 0 based indexing
+    memset(adj, 0, sizeof(adj));    //initializing all the matrix elements to zero.
+    cout<<"Enter Edges : "<<endl;
+    for(int i = 0; i < m; i++){
+        int u , v, wt;    //we use variable wt to store edge weights
+        cin>> u >> v >> wt;
+        adj[u][v] = wt;   // changing 0 to 1 if there exists a edge
+        adj[v][u] = wt;
+    }
+    
+    //printing matrix
+    for(int i = 0; i<=n; i++){
+        for(int j = 0; j<=n;j++){
+            cout<<adj[i][j]<<" ";   //printing the matrix.
+        }
+        cout<<endl;
+    }
+    return 0;
+}
